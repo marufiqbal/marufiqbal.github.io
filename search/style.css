@@ -1,0 +1,125 @@
+form * {
+    background: none;
+}
+
+form, input[type=tex], input[type=submit], button, h4 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+.group:before, .group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.group:before {
+    clear: both;
+}
+.group {
+    zoom:1;
+}
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    height: 35px;
+    
+    background: -webkit-linear-gradient(#fff, #eee);
+    
+    -webkit-box-shadow: inset 0px 2px 5px #bbb, inset 1px -3px  7px #bbb;
+    -moz-box-shadow: inset 0px 2px 5px #bbb, inset 1px -3px  7px #bbb;
+    box-shadow: inset 0px 2px 5px #bbb, inset 1px -3px  7px #bbb;
+    
+}
+
+
+input[type=text]{
+    position: absolute;
+    display: block;
+    width: 187px;
+    float: left;
+    height: 34px;
+    background: url(magnifyingglass.png)no-repeat -4px 3px;
+    outline: solid transparent;
+    padding: 0px 0px 0px 31px;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: 1px;
+    border: none;
+}
+input[type=submit]{
+    position: absolute;
+    right: 0;
+    height: 35px;
+    float: right;
+    padding: 0px 13px;
+    background: #666;
+    -webkit-box-shadow: inset 0px 2px 5px #eee, 1px -3px 7px #eee;
+    -moz-box-shadow: inset 0px 2px 5px #eee, 1px -3px 7px #eee;
+    box-shadow: inset 0px 2px 5px #eee, 1px -3px 7px #eee;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    outline: solid transparent;
+    border-left: 2px solid rgba(255,255,255, .4);
+}
+.well {
+    width: 300px;
+    padding: 20px;
+    background: #F5F5F5;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+.well h4 {
+    margin: 5px 0px 10px 0px;
+    color:#ddd;
+    text-shadow: 0px 0px 1px #000;
+}
+.input-group {
+    position: relative;
+    height: 30px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.input-group input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 237px ;
+    background: #fff;
+    height: 30px;
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 5px 0 0 5px;
+}
+.input-group > input[type=text]:focus {
+    box-shadow: 0px 0px 3px blue;
+    border-radius: 5px 0px 0px 5px;
+}
+.input-group-btn button {
+    position: absolute;
+    right: 0;
+    background: url(magnifyingglass.png)no-repeat, #fff;
+    height: 30px;
+    width: 40px;
+    border-left: 1px solid #ddd;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
